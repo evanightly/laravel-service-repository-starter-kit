@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-next",
+        "laravel.vscode-laravel",
+        "galur-arasy.laravel-forgemate",
+        "open-southeners.laravel-pint",
+        "bmewburn.vscode-intelephense-client",
+        "mehedidracula.php-namespace-resolver",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+    ]
+}
