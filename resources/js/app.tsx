@@ -1,11 +1,11 @@
-import '../css/app.css';
-
+import { Toaster as SonnerToaster } from '@/components/ui/sonner';
 import { createInertiaApp } from '@inertiajs/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { LaravelReactI18nProvider } from 'laravel-react-i18n';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { MouseEvent } from 'react';
 import { createRoot } from 'react-dom/client';
+import '../css/app.css';
 import { addRippleEffect } from './helpers';
 import { initializeTheme } from './hooks/use-appearance';
 
@@ -38,7 +38,7 @@ createInertiaApp({
         root.render(
             <LaravelReactI18nProvider fallbackLocale={'en'} files={import.meta.glob('/lang/*.json')} locale={'en'}>
                 <QueryClientProvider client={queryClient}>
-                    {/* <SonnerToaster
+                    <SonnerToaster
                         closeButton
                         duration={2000}
                         richColors
@@ -48,7 +48,7 @@ createInertiaApp({
                                 // https://github.com/shadcn-ui/ui/issues/2234
                             }
                         }
-                    /> */}
+                    />
                     <App {...props} />
                 </QueryClientProvider>
             </LaravelReactI18nProvider>,
