@@ -42,13 +42,11 @@ function Button({
   size,
   asChild = false,
   ripple = true,
-  loading = false,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean
     ripple?: boolean
-    loading?: boolean
   }) {
   const Comp = asChild ? Slot : "button"
 
@@ -59,11 +57,7 @@ function Button({
       )}
       data-slot="button"
       {...props}
-    >
-      {loading && <LoaderCircle className="animate-spin" />}
-
-      {props.children}
-    </Comp>
+    />
   )
 }
 
