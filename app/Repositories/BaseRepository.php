@@ -10,8 +10,7 @@ use App\Traits\Repositories\HandlesSorting;
 
 /**
  * Base repository implementation
- * 
- * @package App\Repositories
+ *
  * @generated Laravel Forgemate Initializer
  */
 abstract class BaseRepository extends AdobrovolskyBaseRepository implements BaseRepositoryInterface {

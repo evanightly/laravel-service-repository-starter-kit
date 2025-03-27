@@ -8,8 +8,7 @@ use Str;
 
 /**
  * Trait for filtering resource data based on requested fields
- * 
- * @package App\Traits\Resources\JsonResource
+ *
  * @generated Laravel Forgemate Initializer
  */
 trait HandlesResourceDataSelection {
@@ -17,9 +16,9 @@ trait HandlesResourceDataSelection {
      * Filter resource data based on the specified query parameter or return default fields.
      * Ensures closures/functions are only invoked for requested fields.
      */
-    public function filterData(array $dataSource, ?array $default = null, Request $request = null): array {
+    public function filterData(array $dataSource, ?array $default = null, ?Request $request = null): array {
         $request = $request ?? request();
-        
+
         // Dynamically compute the resource key name for the query string
         $resourceKey = Str::snake(class_basename(static::class));
 

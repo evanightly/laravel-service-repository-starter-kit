@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Trait for handling sorting in repositories
- * 
- * @package App\Traits\Repositories
+ *
  * @generated Laravel Forgemate Initializer
  */
 trait HandlesSorting {

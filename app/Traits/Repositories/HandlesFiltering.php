@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Trait for handling query filtering
- * 
- * @package App\Traits\Repositories
+ *
  * @generated Laravel Forgemate Initializer
  */
 trait HandlesFiltering {

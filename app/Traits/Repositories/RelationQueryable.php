@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Trait for handling relationship queries
- * 
- * @package App\Traits\Repositories
+ *
  * @generated Laravel Forgemate Initializer
  */
 trait RelationQueryable {

@@ -1,12 +1,5 @@
 import { ServiceFilterOptions } from '@/Support/Interfaces/Others';
-import {
-    InvalidateQueryFilters,
-    QueryFunction,
-    useMutation,
-    useQuery,
-    useQueryClient,
-    UseQueryOptions,
-} from '@tanstack/react-query';
+import { InvalidateQueryFilters, QueryFunction, useMutation, useQuery, useQueryClient, UseQueryOptions } from '@tanstack/react-query';
 import { AxiosRequestConfig, Method } from 'axios';
 
 const mutationApi = async ({

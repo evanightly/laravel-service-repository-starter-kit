@@ -8,8 +8,7 @@ use Illuminate\Support\Str;
 
 /**
  * Trait for handling file uploads
- * 
- * @package App\Traits\Services
+ *
  * @generated Laravel Forgemate Initializer
  */
 trait HandlesFileUpload {
