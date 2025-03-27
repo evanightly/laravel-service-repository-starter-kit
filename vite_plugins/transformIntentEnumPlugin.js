@@ -4,7 +4,7 @@ import path from 'path';
 import { generatePrefixText } from './lib/generatePrefixText';
 
 const phpEnumFilePath = path.resolve(__dirname, '../app/Support/Enums/IntentEnum.php');
-const tsEnumFilePath = path.resolve(__dirname, '../resources/js/Support/Enums/intentEnum.ts');
+const tsEnumFilePath = path.resolve(__dirname, '../resources/js/support/enums/intentEnum.ts');
 
 function parsePhpEnum(fileContent) {
     const enumMatches = fileContent.match(/case\s+(\w+)\s*=\s*['"](.*?)['"];/g);

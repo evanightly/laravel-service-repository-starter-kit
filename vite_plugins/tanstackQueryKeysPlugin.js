@@ -5,9 +5,9 @@ import { generatePrefixText } from './lib/generatePrefixText';
 
 const tanstackKeysFilePath = path.resolve(
     __dirname,
-    '../resources/js/Support/Constants/tanstackQueryKeys.ts',
+    '../resources/js/support/constants/tanstackQueryKeys.ts',
 );
-const routesFilePath = path.resolve(__dirname, '../resources/js/Support/Constants/routes.ts');
+const routesFilePath = path.resolve(__dirname, '../resources/js/support/constants/routes.ts');
 
 function parseKeys(fileContent) {
     const matches = fileContent.match(/(\w+):\s*['"`]\w+['"`]/g);
