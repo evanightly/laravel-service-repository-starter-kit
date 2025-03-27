@@ -1,4 +1,4 @@
-import { ServiceFilterOptions } from '@/Support/Interfaces/Others';
+import { ServiceFilterOptions } from '@/support/interfaces/others';
 
 const generateUseGetAllQueryKey = (baseKey: string, filters?: ServiceFilterOptions) => {
     return [baseKey, 'all', filters];

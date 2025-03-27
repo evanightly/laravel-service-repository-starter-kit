@@ -1,5 +1,5 @@
-import { ROUTES } from '@/Support/Constants/routes';
-import { GenericBreadcrumbItem } from '@/Support/Interfaces/Others';
+import { ROUTES } from '@/support/constants/routes';
+import { GenericBreadcrumbItem } from '@/support/interfaces/others';
 import { usePage } from '@inertiajs/react';
 
 function generateDynamicBreadcrumbs(): GenericBreadcrumbItem[] {

@@ -1,4 +1,4 @@
-import { ServiceFilterOptions } from '@/Support/Interfaces/Others';
+import { ServiceFilterOptions } from '@/support/interfaces/others';
 import { InvalidateQueryFilters, QueryFunction, useMutation, useQuery, useQueryClient, UseQueryOptions } from '@tanstack/react-query';
 import { AxiosRequestConfig, Method } from 'axios';
 
