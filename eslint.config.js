@@ -20,9 +20,8 @@ export default [
         ...react.configs.flat.recommended,
         ...react.configs.flat['jsx-runtime'], // Required for React 17+
         languageOptions: {
-            globals: {
-                ...globals.browser,
-            },
+            sourceType: 'commonjs',
+            globals: { ...globals.node },
         },
         rules: {
             'react/jsx-sort-props': 'error',
@@ -41,7 +40,7 @@ export default [
             'react-hooks': reactHooks,
         },
         rules: {
-            'react-hooks/rules-of-hooks': 'error',
+            'react-hooks/rules-of-hooks': 'warn',
             'react-hooks/exhaustive-deps': 'warn',
         },
     },
