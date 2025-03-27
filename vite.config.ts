@@ -3,6 +3,16 @@ import react from '@vitejs/plugin-react';
 import laravel from 'laravel-vite-plugin';
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
+import tanstackQueryKeysPlugin from './vite_plugins/tanstackQueryKeysPlugin';
+import intentEnumPlugin from './vite_plugins/transformIntentEnumPlugin';
+import permissionEnumPlugin from './vite_plugins/transformPermissionEnumPlugin';
+import roleEnumPlugin from './vite_plugins/transformRoleEnumPlugin';
+
+// Read environment variable
+const isProduction = process.env.APP_ENV === 'production';
+
+// Conditionally load custom plugins
+const customDevPlugins = isProduction ? [] : [permissionEnumPlugin(), roleEnumPlugin(), intentEnumPlugin(), tanstackQueryKeysPlugin()];
 
 export default defineConfig({
     plugins: [
@@ -13,6 +23,7 @@ export default defineConfig({
         }),
         react(),
         tailwindcss(),
+        ...customDevPlugins,
     ],
     esbuild: {
         jsx: 'automatic',

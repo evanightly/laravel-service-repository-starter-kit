@@ -10,6 +10,12 @@ export default [
     js.configs.recommended,
     ...typescript.configs.recommended,
     {
+        rules: {
+            '@typescript-eslint/no-empty-object-type': 'off',
+            '@typescript-eslint/no-explicit-any': 'off',
+        },
+    },
+    {
         ...react.configs.flat.recommended,
         ...react.configs.flat['jsx-runtime'], // Required for React 17+
         languageOptions: {
@@ -18,6 +24,7 @@ export default [
             },
         },
         rules: {
+            'react/jsx-sort-props': 'error',
             'react/react-in-jsx-scope': 'off',
             'react/prop-types': 'off',
             'react/no-unescaped-entities': 'off',
