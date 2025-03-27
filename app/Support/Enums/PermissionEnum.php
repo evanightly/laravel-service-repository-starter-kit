@@ -4,8 +4,7 @@ namespace App\Support\Enums;
 
 /**
  * Enum for system permissions
- * 
- * @package App\Support\Enums
+ *
  * @generated Laravel Forgemate Initializer
  */
 enum PermissionEnum: string {
@@ -26,6 +25,6 @@ enum PermissionEnum: string {
     case ROLE_READ = 'role-read';
     case ROLE_UPDATE = 'role-update';
     case ROLE_DELETE = 'role-delete';
-    
+
     // Add your model permissions here
 }
