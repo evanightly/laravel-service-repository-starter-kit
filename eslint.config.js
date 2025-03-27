@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
+import unusedImports from 'eslint-plugin-unused-imports';
 import globals from 'globals';
 import typescript from 'typescript-eslint';
 
@@ -42,6 +43,12 @@ export default [
         rules: {
             'react-hooks/rules-of-hooks': 'error',
             'react-hooks/exhaustive-deps': 'warn',
+        },
+    },
+    {
+        plugins: { 'unused-imports': unusedImports },
+        rules: {
+            'unused-imports/no-unused-imports': 'warn',
         },
     },
     {
